@@ -6,34 +6,31 @@
              NavigationPage.HasNavigationBar="False"
              x:Class="CollabLogin.Views.LandingPage">
 
-    <StackLayout BackgroundColor="#191720">
-        <Image x:Name="teamImage" Aspect="AspectFill" Source="teamEffortTrans" HeightRequest="200" ></Image>
+    <StackLayout BackgroundColor="{DynamicResource grayBackgroundColor}">
+        <Image x:Name="teamImage" Aspect="AspectFill" Source="uiNewTeam"  ></Image>
         <Label VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center">
             <Label.FormattedText>
                 <FormattedString>
-                    <Span Text="Enterprise team collaboration. &#x0a;" FontSize="32" FontAttributes="Bold" FontFamily="" TextColor="White"/>
-                    <Span Text="&#x0a; Bring together your files, your tools, projects and people, including a new mobile and desktop application." FontSize="22" TextColor="#757781"/>
+                    <Span Text="Enterprise team collaboration. &#x0a;" FontSize="32" FontAttributes="Bold" FontFamily="" TextColor="{DynamicResource whiteTextColor}"/>
+                    <Span Text="&#x0a; Bring together your files, your tools, projects and people, including a new mobile and desktop application." FontSize="22" TextColor="{DynamicResource grayTextColor}"/>
                 </FormattedString>
             </Label.FormattedText>
         </Label>
 
         <StackLayout>
-          <Frame Padding="0"  BackgroundColor="#3b3a42" Margin="10" CornerRadius="20">
-               
+            <Frame Padding="0"  BackgroundColor="{DynamicResource grayFrameColor}" Margin="10" CornerRadius="20">
                 <StackLayout Orientation="Horizontal">
-                    <Frame Padding="20" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" WidthRequest="175"  BackgroundColor ="#fff" CornerRadius="20" >
-                        <Label TextColor="#25232c" Text="Register" HorizontalOptions="CenterAndExpand" FontSize="Medium" FontAttributes="Bold">
+                    <Frame Padding="20" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" WidthRequest="175"  BackgroundColor ="{DynamicResource whiteTextColor}" CornerRadius="20" >
+                        <Label TextColor="{DynamicResource darkGrayFrameColor}" Text="Register" HorizontalOptions="CenterAndExpand" FontSize="Medium" FontAttributes="Bold">
                             <Label.GestureRecognizers>
                                 <SwipeGestureRecognizer Direction="Right" Command="{Binding SelectSignInCommand}"></SwipeGestureRecognizer>
                             </Label.GestureRecognizers>
                         </Label>
                     </Frame>
-                    <Label TextColor="#f6f6f6" Text="Sign In" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0,0,50,0" FontSize="Medium" FontAttributes="Bold"></Label>
+                    <Label TextColor="{DynamicResource whiteTextColor}" Text="Sign In" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0,0,50,0" FontSize="Medium" FontAttributes="Bold"></Label>
                 </StackLayout>
             </Frame>
         </StackLayout>
-
-
     </StackLayout>
 
 </ContentPage>

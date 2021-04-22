@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using CollabLogin.Views;
+using Prism.Commands;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,9 @@ namespace CollabLogin.ViewModels
             SelectSignInCommand = new DelegateCommand(OnSelectSignInCommand);
         }
 
-        private void OnSelectSignInCommand()
+        private async void OnSelectSignInCommand()
         {
-            Console.WriteLine("works......");
+           //await NavigationService.NavigateAsync(SignInPage);
         }
 
     }

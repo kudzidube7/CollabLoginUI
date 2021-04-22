@@ -20,7 +20,7 @@ namespace CollabLogin
             InitializeComponent();
 
             //await NavigationService.NavigateAsync("NavigationPage/MainPage");
-            await NavigationService.NavigateAsync("NavigationPage/LandingPage");
+            await NavigationService.NavigateAsync("NavigationPage/SignInPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -30,6 +30,7 @@ namespace CollabLogin
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<LandingPage, LandingPageViewModel>();
+            containerRegistry.RegisterForNavigation<SignInPage, SignInPageViewModel>();
         }
     }
 }

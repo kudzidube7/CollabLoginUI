@@ -4,8 +4,17 @@
              xmlns:prism="http://prismlibrary.com"
              x:Class="CollabLogin.App">
   <Application.Resources>
-
     <!-- Application resource dictionary -->
+      <!--COLORS-->
+        <Color x:Key="grayBackgroundColor">#191720</Color>
+        <Color x:Key="whiteTextColor">#fefefe</Color>
+        <Color x:Key="grayTextColor">#757781</Color>
+        <Color x:Key="grayFrameColor">#3b3a42</Color>
+        <Color x:Key="darkGrayFrameColor">#25232c</Color>
+        <Color x:Key="blackTextColor">#313038</Color>
 
-  </Application.Resources>
+        <Color x:Key="entryBackgroundColor">#1e1c24</Color>
+        <Color x:Key="entryTextColor">#7c7d88</Color>
+
+    </Application.Resources>
 </prism:PrismApplication>
