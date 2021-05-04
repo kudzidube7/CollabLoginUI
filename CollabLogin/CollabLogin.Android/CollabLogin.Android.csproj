@@ -74,6 +74,9 @@
     <LinkDescription Include="LinkerSettings.xml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\FontAwesome5FreeRegular.otf" />
+    <AndroidAsset Include="Assets\FontAwesome5FreeSolid.otf" />
+    <AndroidAsset Include="Assets\FontAwesome5BrandsRegular.otf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>

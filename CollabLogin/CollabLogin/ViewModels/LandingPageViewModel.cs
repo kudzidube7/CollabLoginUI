@@ -17,7 +17,7 @@ namespace CollabLogin.ViewModels
 
         private async void OnSelectSignInCommand()
         {
-           //await NavigationService.NavigateAsync(SignInPage);
+           await NavigationService.NavigateAsync("SignInPage");
         }
 
     }

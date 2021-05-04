@@ -22,17 +22,10 @@ namespace CollabLogin.Droid.CustomRenderers
             base.OnElementChanged(e);
             if(Control != null)
             {
-               
                 GradientDrawable gd = new GradientDrawable();
-                Control.Background = new ColorDrawable(Android.Graphics.Color.Red);
-        
-               // gd.SetColor(Android.Graphics.Color.LightGray);
                 gd.SetColor(Android.Graphics.Color.ParseColor("#1e1c24"));
                 gd.SetCornerRadius(75);
                 Control.SetBackgroundDrawable(gd);
-              
-                
-
             }
         }
     }

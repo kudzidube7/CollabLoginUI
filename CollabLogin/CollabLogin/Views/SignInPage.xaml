@@ -1,35 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              NavigationPage.HasNavigationBar="False"
-             xmlns:local="clr-namespace:CollabLogin"
-                 xmlns:controls="clr-namespace:CollabLogin"
-             x:Class="CollabLogin.Views.SignInPage">
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            NavigationPage.HasNavigationBar="False"
+            xmlns:local="clr-namespace:CollabLogin"
+            xmlns:controls="clr-namespace:CollabLogin"
+            x:Class="CollabLogin.Views.SignInPage">
 
     <StackLayout BackgroundColor="{DynamicResource grayBackgroundColor}" VerticalOptions="FillAndExpand" >
         <StackLayout Orientation="Vertical" Margin="20">
-            <Frame  Padding="10" WidthRequest="30" HeightRequest="30" VerticalOptions="CenterAndExpand" HorizontalOptions="Start">
-                <Label Text="left"></Label>
-            </Frame>
+            <Label Text="&#xf053;" TextColor="{StaticResource whiteTextColor}" FontSize="26" FontFamily="{StaticResource FontAwesomeSolid}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding BackCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
 
-            <Label Text="Let's sign you in." FontSize="Large" TextColor="{StaticResource whiteTextColor}"></Label>
-            <Label Text="Welcome back." FontSize="Large" TextColor="{StaticResource whiteTextColor}"></Label>
-            <Label Text="You've been missed!" FontSize="Large" TextColor="{StaticResource whiteTextColor}" Margin="0,0,0,50"></Label>
+            <Label Text="Let's sign you in." FontAttributes="Bold" FontSize="44" TextColor="{StaticResource whiteTextColor}"/>
+            <Label Text="Welcome back." FontSize="40" TextColor="{StaticResource whiteTextColor}"/>
+            <Label Text="You've been missed!" FontSize="38" TextColor="{StaticResource whiteTextColor}" Margin="0,0,0,50"/>
+
             <Frame Padding="1"  BorderColor="{StaticResource entryTextColor}" CornerRadius="22" Margin="0,0,0,20" >
-                <controls:CustomEntry  Placeholder="Phone, email or username" PlaceholderColor="{StaticResource entryTextColor}" >
-                    </controls:CustomEntry >
+                <controls:CustomEntry   Placeholder="Phone, email or username" PlaceholderColor="{StaticResource entryTextColor}" />
             </Frame>
-
             <Frame Padding="1"  BorderColor="{StaticResource entryTextColor}" CornerRadius="22" >
-                <controls:CustomEntry Placeholder="Password" PlaceholderColor="{StaticResource entryTextColor}" IsPassword="True" ></controls:CustomEntry >
+                <controls:CustomEntry Placeholder="Password" PlaceholderColor="{StaticResource entryTextColor}" IsPassword="True" />
             </Frame>
-
+            
         </StackLayout>
 
         <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand" Margin="20" >
-            <Label Text="Don't have an account? Register" HorizontalTextAlignment="Center" FontSize="Large" TextColor="{StaticResource whiteTextColor}"></Label>
-            <Button CornerRadius="20" Text="Sign In" TextColor="{StaticResource blackTextColor}"></Button>
+            <Label  HorizontalTextAlignment="Center" FontSize="Medium" Margin="0,0,0,20">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Don't have an account?" TextColor="{StaticResource entryTextColor}"/>
+                        <Span Text=" Register" TextColor="{StaticResource whiteTextColor}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button CornerRadius="20" Text="Sign In" TextColor="{StaticResource blackTextColor}"/>
         </StackLayout>
+        
     </StackLayout>
 
 </ContentPage>

@@ -23,7 +23,7 @@
                     <Frame Padding="20" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" WidthRequest="175"  BackgroundColor ="{DynamicResource whiteTextColor}" CornerRadius="20" >
                         <Label TextColor="{DynamicResource darkGrayFrameColor}" Text="Register" HorizontalOptions="CenterAndExpand" FontSize="Medium" FontAttributes="Bold">
                             <Label.GestureRecognizers>
-                                <SwipeGestureRecognizer Direction="Right" Command="{Binding SelectSignInCommand}"></SwipeGestureRecognizer>
+                                <TapGestureRecognizer Command="{Binding SelectSignInCommand}"></TapGestureRecognizer>
                             </Label.GestureRecognizers>
                         </Label>
                     </Frame>

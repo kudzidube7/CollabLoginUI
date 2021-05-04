@@ -18,9 +18,7 @@ namespace CollabLogin
         protected override async void OnInitialized()
         {
             InitializeComponent();
-
-            //await NavigationService.NavigateAsync("NavigationPage/MainPage");
-            await NavigationService.NavigateAsync("NavigationPage/SignInPage");
+            await NavigationService.NavigateAsync("NavigationPage/LandingPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
